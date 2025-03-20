@@ -41,7 +41,7 @@ image = cv2.imread(image_path)
 
 # Find all faces in the image
 face_locations = face_recognition.face_locations(image)
-#face_locations = face_recognition.face_locations(image, model="cnn")
+
 for face_location in face_locations:
     # Get the face location
     print(f"Face found at {face_location}")
