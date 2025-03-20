@@ -40,7 +40,7 @@ image_path = 'C:\\Users\\ailiv\\Desktop\\mix.jpg'
 image = cv2.imread(image_path)
 
 # Find all faces in the image
-face_locations = face_recognition.face_locations(image, model="cnn", number_of_times_to_upsample=1)
+face_locations = face_recognition.face_locations(image)
 #face_locations = face_recognition.face_locations(image, model="cnn")
 for face_location in face_locations:
     # Get the face location
